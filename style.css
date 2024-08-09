@@ -1,0 +1,95 @@
+@font-face {
+    font-family: poppins;
+    src: url(assets/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: rowdies;
+    src: url(assets/Rowdies-Regular.ttf);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+    background-color: #ffffff;
+}
+
+header {/* deixa o cabeçalho fixo NÃO MEXE LAURA */
+    position: fixed;
+    top: -5vh;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.container {/* AQUI VAI DEIXAR TUDO DENTRO DO CABEÇALHO NO CENTRO BONITINHO E O TAMANHO DO CABECALHO*/
+    text-align: center;
+    display: flex;
+    height: 25vh; /* Certifique-se de que essa altura é suficiente */
+    justify-content: center; /* Ajuste aqui para garantir centralização */
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.396);
+}
+
+#navegacao {/* AQUI TAMBÉM VAI DEIXAR TU BONITINHO NO CABEÇALHO */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Adiciona para centralizar o conteúdo */
+}
+
+
+#navegacao h1 {/* AQUI VAI MUDAR A FONT E O TAMANHO DELA NO CABEÇALHO SERIA A PARTE LÁ DO OVO  ONLINE*/
+    font-family: rowdies;
+    font-weight: 300;
+}
+
+#navegacao h3{/* AQUI MUDA COR FONTE DO RESTO DO CABEÇALHO */
+    font-family: poppins;
+    font-weight: 300;
+    color: black;
+}
+
+.titulo-ovo{/* abaxei aqui porque estava bem alto e queria que ficasse perto do online */
+    margin-top: 6vh;
+}
+
+.assineAqui{/* deixei ele com o fundo e as bordas redondas */
+    background-color: #F1BB45;
+    border-radius: 34px;
+    width: 20vh;
+}
+
+.titulo-online{/* COLOQUEI  PARA MUDAR A COR DO ONLINE DO OVO */
+    color: #F1BB45;
+    margin-top: -3vh;
+}
+
+#navegacao div {/* AQUI DA UM ESPAÇOENTRE AS PALAVRA EXEMPLO BENEFÍCIO  CULINÁRIA */
+    margin: 5vh;
+    cursor: pointer;
+}
+
+
+a{/* ISSO TIRA O TRAÇO DEBAIXO DA PALAVRA */
+    text-decoration: none;
+}
+
+
+/* aqui acabou a parte do cabeçalho  */
+
+/* começo da imagem! */
+.imagem-principal img {/* editei a própria imagem para ela ficar 100% de largura na tela ------ */
+    width: 100%;
+    margin-top: 20vh;
+    
+}
+.imagem-principal  { /* aqui também arrumei a div da imagem principal do ovo para ficar 100% na tela */
+    width: 100%;
+    height: auto;
+    
+}
