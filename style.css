@@ -123,7 +123,7 @@ h5{
 }
 /*nosso plano*/
 
-.nosso-plano h2{
+.nosso-plano h1{
   text-align: center;
     margin-top: 30vh;
     font-family: 'Poppins';
@@ -136,13 +136,14 @@ h5{
       margin-top: 15vh;
 }
 .planos {
-    /*a div planos guarda todos os elementos
+    /* /*a div planos guarda todos os elementos */
     display: flex;
     justify-content: space-around;
     text-align: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px; /* Limita a largura máxima da div */
+    max-width: 1200px; 
+    /* Limita a largura máxima da div */
     margin: 0 auto; /* Centraliza a div na página */
     padding: 20px; /* Adiciona um pouco de espaço interno */
     box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
@@ -209,120 +210,161 @@ margin-left: 28vh;
 }
 
 
+/* RECEITA*/
 
 
 
-/* CARROSSEL DE IMAGENS */
-
-.titulo-carrossel {
-    /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
-    font-family: 'poppins';
-    font-size: 28px;
+.titulo-receita {
     text-align: center;
-    margin-top: 300px;
-    /* useei margin-top para abaixar meu título */
-    margin-left: 7vw;
-}
-
-.tudo-carrossel {
-    /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
-    margin-top: 15vh;
-    justify-content: center;
-    align-items: center;
+    margin: 100px auto; 
+    border-bottom: 2px solid black;
+    padding-bottom: 2px; 
+    width: 400px; 
     display: flex;
-}
-
-.carousel-container {
-    /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
-
-    position: relative;
-    width: 830px;
-    overflow: hidden;
-
-}
-
-
-.carousel {
+    flex-direction: column;
+    align-items: center; 
+    font-family: 'lightPoppins';
+} 
+.receitas-container {
     display: flex;
-    transition: 0.9s;
+    justify-content: space-evenly;
+    margin-top: 5px; }
 
-
-
+.receita {
+    border: 2px solid black; 
+    padding: 10px; 
+    width: 22%; 
+    height: 300px;
+    text-align: center; 
+    box-sizing: border-box; 
+    border-radius: 20px;
 }
 
-.carousel ul {
-    /* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-
-}
-
-.tudo-funcionamento img,
-h5 {
-    /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
-    margin-top: 5vh;
-}
-
-
-
-.carousel img {
-    /* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+.receita img {
+    width: 200px; 
     height: auto;
+    margin-top: 20px;
 }
 
-
-
-.img {
-    /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
-    width: 243px;
-    height: 236px;
-    border: 1px solid black;
-    margin-left: 25px;
-    background-color: #F5F5F5;
-    font-family: Forum;
-    font-size: 22.4px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-
+.receita h3 {
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    font-family: 'SemiBoldPoppins';
 }
 
-.botoes-carrossel {
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    /* Ajuste a posição vertical para o meio */
-    transform: translateY(-50%);
-    /* Ajuste para centralizar verticalmente usando transform */
-    display: flex;
-    align-items: center;
+.receita button {
+    padding: 5px 10px; 
+    border: none;
+    background-color: #F1BB45;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem; 
 }
 
-.carousel-button-left {
-    margin-left: 1vw;
+.receita button:hover {
+    background-color: gray; 
 }
 
-.carousel-button-right {
-    right: 1vw;
+
+/*Contato*/
+
+.contato {
+    margin-top: 200px;
+    background-color: #FBF5F0;
+    width: 100%;
+    height: 1100px; /* Altura ajustada para o contêiner */
+    position: relative;
 }
-.div {
+
+.titulo-contato {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'lightPoppins';
+}
+
+.img-contato {
+    text-align: center;
+    margin-top: -30px; /* Ajustado para não sobrepor o título */
+}
+.linha-contato {
+    border-left: 2px solid #ECA21A; /* Linha vertical */
+    height: 80%; /* Ajuste a altura da linha */
+    margin: 0 20px; /* Espaçamento horizontal ao redor da linha */
+}
+
+.contato-container {
     display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    height: 60%; /* Ajusta a altura do contêiner para a área de contato */
+    padding: 20px; /* Espaçamento interno do contêiner */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+}
+
+.endereco-contato, .email-contato {
+    font-family: 'lightPoppins';
+    font-size: 16px;
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 0 20px; /* Espaçamento horizontal ao redor dos textos */
+}
+
+.mapa, .email {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+}
+.cadastre-contato{
+    text-align: center;
+    align-items: center;
+    color: #ECA21A;
+    font-family: 'Poppins';
+}
+
+.cadastre-contato {
+    margin-bottom: 20px;
+}
+
+
+
+
+placeholder{
+    font-family: 'Poppins';
+ 
+   
+}
+
+
+input{
+    background-color: rgba(219, 176, 138, 0.18); /* Cor de fundo do retângulo */
+    width: 400px;
+    height: 80px;
+    border-radius: 30px;
+    border: 2px ; 
+    font-size: 20px;
+
+}
+.email-form{
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
+.button-email{
+    height: 80px;
+    width: 100px;
+    border-radius: 30px;
+    margin-left: -80px;
+    border: 2px;
+    background-color: #F1BB45;
+}
 
-.linha {
-    margin-left: 14vh;
-    width: 30vh; /* Adjust the width as needed */
-    height: 1px; /* Adjust the height as needed */
-    background-color: black; /* Adjust the color as needed */
+
+
+/*Rodapé*/
+
+.titulo-ovorodape, .titulo-onlinerodape{
+font-family: 'Rowdies';
+}
+.titulo-ovorodape{
+    margin-top: 6vh;
+    color: #F1BB45;
 }

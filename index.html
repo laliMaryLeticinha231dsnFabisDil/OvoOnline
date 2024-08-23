@@ -49,7 +49,7 @@
         </div>
 
         <div class="nosso-plano">
-            <h2>Assine nosso plano</h2>
+            <h1>Assine nosso plano</h1>
         </div>
         <div class="planos">
             <div class="galinha">
@@ -86,7 +86,7 @@
 
             <div class="todosOsBeneficios">
                 <div class="div-titulo-beneficio">
-                  
+
                     <h2 class="titulo-beneficio">Beneficios do Ovo</h2>
                 </div>
                 <div class="beneficio-subtitulo">
@@ -137,99 +137,72 @@
             </div>
         </div>
 
-
-
-        <section id="carrossel">
-            <h1 id="Tvoluntarios11" class="titulo-carrossel">Receitas</h1>
-         <div class="div">  <div class="linha"></div></div> 
-            <div class="tudo-carrossel">
-                <div class="carousel-container">
-                    <div class="carousel">
-
-                        <ul>
-                            <div class="img">
-                                <li><img src="assets/ovo-mexido.png" alt="Imagem 1">
-                                    <h5 id="Tvoluntarios12">Ovo Mexido</h5>
-                                </li>
-                            </div>
-
-                            <div class="img">
-                                <li><img src="assets/ovo-poche.png" alt="Imagem 2">
-                                    <h5 id="Tvoluntarios13">Ovo no Forno</h5>
-                                </li>
-                            </div>
-
-
-    
-
-
-                            <div class="img">
-                                <li><img src="assets/ovo-forno.png" alt="Imagem 4">
-                                    <h5 id="Tvoluntarios15">Ovo Pochê</h5>
-                                </li>
-                            </div>
-
-
-                           
-                            
-                        </ul>
-
-
-                    </div>
-
-                    <div class="botoes-carrossel">
-                        <div class="carousel-button carousel-button-left" onclick="prevSlide()">
-                            <img class="direita" src="img/seta-direita-volt.png" alt=""> <!-- Seta esquerda -->
-                        </div>
-                        <div class="carousel-button carousel-button-right" onclick="nextSlide()">
-                            <img src="img/seta-esquerda-volt.png" alt=""> <!-- Seta direita -->
-                        </div>
-                    </div>
+        <div class="receitas">
+            <div class="titulo-receita">
+                <h1>Receitas</h1>
+            </div>
+            <div class="receitas-container">
+                <div class="receita">
+                    <img src="assets/ovo-mexido.png" alt="">
+                    <h3>Ovos mexidos cremoso</h3>
+                    <button>Ver receita</button>
+                </div>
+                <div class="receita">
+                    <img src="assets/ovo-poche.png" alt="">
+                    <h3>Ovo Pochê</h3>
+                    <button>Ver receita</button>
+                </div>
+                <div class="receita">
+                    <img src="assets/ovo-forno.png" alt="">
+                    <h3>Ovos ao Forno com Espinafre</h3>
+                    <button>Ver receita</button>
                 </div>
             </div>
-        </section>
+        </div>
+
+
+        <div class="contato">
+            <div class="titulo-contato">
+                <h1>Entre em contato</h1>
+            </div>
+            <div class="img-contato">
+                <img src="assets/contato.png" alt="">
+            </div>
+            <div class="contato-container">
+                <div class="endereco-contato">
+                    <h2>Rua Patrocinio Monteiro nº 485-Centro- Bastos - SP <br> CEP: 17.690-000</h2>
+                    <img src="assets/mapa.png" alt="" class="mapa">
+                </div>
+                <div class="linha-contato"></div>
+                <div class="email-contato">
+                    <h2>Email: ovoonline@ovoonline.com.br</h2>
+                    <h2>Telefone: (14) 3478-3862p <span>ου</span> (14) 9704-1459</h2>
+                    <img src="assets/email.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="cadastre-contato">
+                <h1>Cadastre-se e receba nossas novidades!</h1>
+            </div>
+            <div class="retangulo-contato">
+                <div class="email-form">
+                    <input type="text" placeholder="Insira seu email">
+                    <button class="button-email">Enviar</button>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <footer>
+        <div class="titulo-rodape">
+            <h1 class="titulo-ovorodape">OVO </h1>
+            <H1 class="titulo-onlinerodape">ONLINE</H1>
+
+        </div>
+    </footer>
 
 
-    <script>
-          const carousel = document.querySelector('.carousel');
-        let currentIndex = 0; //QUANDO PASSO NA SETINHA ELE VIRA 1, DEPOIS 2
-
-        function updateCarousel() {
-            var largura = window.innerWidth; //PEGA A LARGURA DA TELA
-            carousel.style.transform = `translateX(-${currentIndex * 54500 / largura}%)`; //MULTIPLICA O CURRENT INDEX POR UM NÚMERO E DIVIDE PELA LARGURA DA TELA
-            // if(window.innerWidth <= 768){
-            //     carousel.style.transform = `translateX(-${currentIndex * 70}%)`;
-            // }
-
-            if (window.innerWidth <= 400) {
-                carousel.style.transform = `translateX(-${currentIndex * 40500 / largura}%)`;
-            }
-        }
-
-        console.log(window.innerWidth)
-
-
-        // Função para avançar o carrossel
-        function nextSlide() {
-            currentIndex++;
-            if (currentIndex >= carousel.children[0].children.length - 2) {
-                currentIndex = 0; // Volta para a primeira imagem quando atinge a última
-            }
-            updateCarousel();
-        }
-
-        // Função para retroceder o carrossel
-        function prevSlide() {
-            currentIndex--;
-            if (currentIndex < 0) {
-                currentIndex = carousel.children[0].children.length - 3; // Vai para a última imagem quando estiver na primeira
-            }
-            updateCarousel();
-        }
-        updateCarousel(); // Inicializa o carrossel
-    </script>
 </body>
 
 </html>
