@@ -118,6 +118,7 @@ a {
 
 }
 .planos {
+    /*a div planos guarda todos os elementos
     display: flex;
     justify-content: space-around;
     text-align: center;
