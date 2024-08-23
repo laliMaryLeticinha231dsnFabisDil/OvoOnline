@@ -7,14 +7,21 @@
     font-family: rowdies;
     src: url(assets/Rowdies-Regular.ttf);
 }
-
+@font-face {
+    font-family: SemiBoldPoppins;
+    src: url(assets/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: lightPoppins;
+    src: url(assets/Poppins-Light.ttf);
+}
 
 body {
-    display: flex;
+   
     flex-direction: column;
-    align-items: center;
+
     margin: 0;
-    font-family: 'Poppins';
+  
     background-color: #ffffff;
 }
 
@@ -99,7 +106,8 @@ a {
 /* começo da imagem! */
 .imagem-principal img {
     /* editei a própria imagem para ela ficar 100% de largura na tela ------ */
-    width: 100%;
+        width: 100%;
+
     margin-top: 20vh;
 
 }
@@ -110,12 +118,22 @@ a {
     height: auto;
 
 }
+h5{
+    font-family: "poppins";
+}
+/*nosso plano*/
 
 .nosso-plano h2{
-    margin-top: 30px;
+  text-align: center;
+    margin-top: 30vh;
     font-family: 'Poppins';
     font-weight: 100;
 
+}
+
+.planos{
+      font-family: 'Poppins';
+      margin-top: 15vh;
 }
 .planos {
     /*a div planos guarda todos os elementos
@@ -131,3 +149,180 @@ a {
 }
 
 
+
+/* PARTE DOS BENEFÍCIOS*/
+
+.beneficio{
+    max-width: 100%;
+    display: flex;
+    margin-top: 35vh;
+   
+}
+.beneficio img{
+    width: 750px;
+    height: 993;
+}
+
+.titulo-beneficio{
+  text-align: center;
+    align-items: center;
+    font-family: 'rowdies';
+    font-weight: 500;
+    font-size: 6vh;
+}
+.circulo{
+    width: 99px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #F1BB45;
+    display: flex;
+    justify-content: center;
+    font-size: 5vh;
+   
+}
+.circulo p{
+    margin-left: 8vh;
+    margin-top: 6vh;
+    font-family: 'poppins';
+}
+.beneficio-subtitulo{
+    align-items: center; 
+    margin-left: 14vh;
+    display: flex;
+    padding: 7vh;
+    
+  
+}
+.beneficio-subtitulo h2{
+     font-family: 'SemiBoldPoppins';
+     margin-left: 4vh;
+
+}
+.texto-beneficio{
+font-family: 'lightPoppins';
+font-weight: 200;
+font-size: 2.75vh;
+text-align: center;
+margin-top: -8vh;
+width: 65vh;
+margin-left: 28vh;
+}
+
+
+
+
+
+/* CARROSSEL DE IMAGENS */
+
+.titulo-carrossel {
+    /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
+    font-family: 'poppins';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 300px;
+    /* useei margin-top para abaixar meu título */
+    margin-left: 7vw;
+}
+
+.tudo-carrossel {
+    /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
+    margin-top: 15vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.carousel-container {
+    /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
+
+    position: relative;
+    width: 830px;
+    overflow: hidden;
+
+}
+
+
+.carousel {
+    display: flex;
+    transition: 0.9s;
+
+
+
+}
+
+.carousel ul {
+    /* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+.tudo-funcionamento img,
+h5 {
+    /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
+    margin-top: 5vh;
+}
+
+
+
+.carousel img {
+    /* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+    height: auto;
+}
+
+
+
+.img {
+    /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+    width: 243px;
+    height: 236px;
+    border: 1px solid black;
+    margin-left: 25px;
+    background-color: #F5F5F5;
+    font-family: Forum;
+    font-size: 22.4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.botoes-carrossel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    /* Ajuste a posição vertical para o meio */
+    transform: translateY(-50%);
+    /* Ajuste para centralizar verticalmente usando transform */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    margin-left: 1vw;
+}
+
+.carousel-button-right {
+    right: 1vw;
+}
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    margin-left: 14vh;
+    width: 30vh; /* Adjust the width as needed */
+    height: 1px; /* Adjust the height as needed */
+    background-color: black; /* Adjust the color as needed */
+}
