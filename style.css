@@ -118,7 +118,9 @@ a {
     height: auto;
 
 }
-
+h5{
+    font-family: "poppins";
+}
 /*nosso plano*/
 
 .nosso-plano h2{
@@ -205,3 +207,121 @@ width: 65vh;
 margin-left: 28vh;
 }
 
+
+
+
+
+/* CARROSSEL DE IMAGENS */
+
+.titulo-carrossel {
+    /* aqui é o titulo do carrossel dei um margin left só para dá um espaço, não queria deixar no centro */
+    font-family: 'poppins';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 300px;
+    /* useei margin-top para abaixar meu título */
+    margin-left: 7vw;
+}
+
+.tudo-carrossel {
+    /* coloquei essa div tudo para incluir tudo no carrossel, deixar ele no centro e ultilizei margin top para abaixar ele */
+    margin-top: 15vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.carousel-container {
+    /* ele também tem tudo mas a função dele mesmo é o tamanho em si do carrossel, ele mexe no js */
+
+    position: relative;
+    width: 830px;
+    overflow: hidden;
+
+}
+
+
+.carousel {
+    display: flex;
+    transition: 0.9s;
+
+
+
+}
+
+.carousel ul {
+    /* essa parte ele só pega o conteudo do carrossel ou seja imagens e titulo */
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+
+.tudo-funcionamento img,
+h5 {
+    /* esssa parte foi para arrumar o top dentro do quadrado as imagens */
+    margin-top: 5vh;
+}
+
+
+
+.carousel img {
+    /* essa parte teve que ficar se eu tiro esse auto as imagens ficam diferentes */
+    height: auto;
+}
+
+
+
+.img {
+    /* essa parte foi onde coloquei borda, tamanho dos quadrado o distanciamento delas */
+    width: 243px;
+    height: 236px;
+    border: 1px solid black;
+    margin-left: 25px;
+    background-color: #F5F5F5;
+    font-family: Forum;
+    font-size: 22.4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.botoes-carrossel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    /* Ajuste a posição vertical para o meio */
+    transform: translateY(-50%);
+    /* Ajuste para centralizar verticalmente usando transform */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    margin-left: 1vw;
+}
+
+.carousel-button-right {
+    right: 1vw;
+}
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha {
+    margin-left: 14vh;
+    width: 30vh; /* Adjust the width as needed */
+    height: 1px; /* Adjust the height as needed */
+    background-color: black; /* Adjust the color as needed */
+}
