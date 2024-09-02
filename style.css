@@ -48,7 +48,7 @@ header {
 }
 
 #navegacao {
-    /* AQUI TAMBÉM VAI DEIXAR TU BONITINHO NO CABEÇALHO */
+    /* AQUI TAMBÉM VAI DEIXAR TUdo BONITINHO NO CABEÇALHO */
     align-items: center;
     text-align: center;
     display: flex;
@@ -153,7 +153,7 @@ h5{
 
 /* PARTE DOS BENEFÍCIOS*/
 
-.beneficio{
+#beneficio{
     max-width: 100%;
     display: flex;
     margin-top: 35vh;
@@ -231,10 +231,10 @@ margin-left: 28vh;
     margin-top: 5px; }
 
 .receita {
-    border: 2px solid black; 
+    border: 1px solid black; 
     padding: 10px; 
     width: 22%; 
-    height: 300px;
+    height: 350px;
     text-align: center; 
     box-sizing: border-box; 
     border-radius: 20px;
@@ -259,7 +259,8 @@ margin-left: 28vh;
     color: white;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
+    margin-top: 15px; 
 }
 
 .receita button:hover {
@@ -349,7 +350,7 @@ input{
     align-items: center;
 }
 .button-email{
-    height: 80px;
+    height: 85px;
     width: 100px;
     border-radius: 30px;
     margin-left: -80px;
@@ -360,11 +361,21 @@ input{
 
 
 /*Rodapé*/
+.rodape{
+    height: 400px;
+}
 
+.titulo-ovorodape{
+    margin-top: 150px;
+}
 .titulo-ovorodape, .titulo-onlinerodape{
 font-family: 'Rowdies';
+font-weight: '400';
+text-align: center;
+justify-content: center;
+align-items: center;
 }
-.titulo-ovorodape{
-    margin-top: 6vh;
+.titulo-onlinerodape{
+   margin-top: -15px;
     color: #F1BB45;
 }
