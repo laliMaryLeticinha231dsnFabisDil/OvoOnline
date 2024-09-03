@@ -246,26 +246,8 @@ margin-left: 28vh;
     margin-top: 20px;
 }
 
-.receita h3 {
-    margin-top: 10px; 
-    margin-bottom: 5px; 
-    font-family: 'SemiBoldPoppins';
-}
 
-.receita button {
-    padding: 5px 10px; 
-    border: none;
-    background-color: #F1BB45;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    margin-top: 15px; 
-}
 
-.receita button:hover {
-    background-color: gray; 
-}
 
 
 /*Contato*/
@@ -393,3 +375,8 @@ align-items: center;
     color: #8F8F8F;
 
 }
+
+
+
+
+
