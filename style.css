@@ -244,6 +244,7 @@ margin-left: 28vh;
     width: 200px; 
     height: auto;
     margin-top: 20px;
+    border-radius: 2px;
 }
 .receita h3{
     font-family: 'poppins';
@@ -282,18 +283,19 @@ margin-left: 28vh;
     
 }
 .linha-contato {
-    border-left: 2px solid #ECA21A; 
-    height: 80%;
+    border-left: 3px solid #ECA21A; 
+    height: 300px;
     margin: 0 20px; 
 }
 
 .contato-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px; 
-    box-sizing: border-box; 
+    justify-content: center;
+    align-items: stretch; /* Certifique-se de que os itens tenham a mesma altura */
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 
 .endereco-contato, .email-contato {
     font-family: 'lightPoppins';
@@ -303,7 +305,7 @@ margin-left: 28vh;
 }
 
 .mapa, .email {
-    max-width: 100%; 
+    max-width: 50px; 
     height: auto;
 }
 .cadastre-contato{
@@ -389,4 +391,12 @@ align-items: center;
 
 
 
+#teste {
+    position: relative;
+    border-radius: 8px; 
+}
 
+#teste:hover {
+    top: -10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3); /* Mantém a sombra suave */
+}
